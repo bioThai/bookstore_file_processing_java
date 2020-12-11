@@ -168,13 +168,13 @@ public class BookStore {
 	 *********************************************************/
 	private void readNextDataSet(Scanner scannerFile)
 	{
-		if (scannerFile == statusInFile)
+		if (scannerFile.equals(statusInFile))
 		{
 			isbn_statusIn = statusInFile.nextLine();
 			currentQty = Integer.parseInt(statusInFile.nextLine());
 			stockQty = Integer.parseInt(statusInFile.nextLine());
 		}
-		else if (scannerFile == shipInFile)
+		else if (scannerFile.equals(shipInFile))
 		{
 			isbn_shipIn = shipInFile.nextLine();
 			shippedQty = Integer.parseInt(shipInFile.nextLine());
